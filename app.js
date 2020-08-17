@@ -24,6 +24,16 @@ class App extends React.Component {
 
     } else if (type === 'decrement') {
 
+      if (this.state.quantity >= 9) {
+        this.setState(prevState => ({
+          isVisible: true
+        }));
+      } else {
+        this.setState(prevState => ({
+          isVisible: false
+        }));
+      }
+
       if (this.state.quantity > 0) {
         this.setState(prevState => ({
           quantity: --prevState.quantity,
