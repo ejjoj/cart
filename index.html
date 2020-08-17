@@ -7,14 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Koszyk</title>
     <style>
-        #root {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /*#root {*/
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*}*/
+
+        /*button, p {*/
+        /*    margin: 0 8px;*/
+        /*}*/
+
+        div {
+            line-height: 50px;
+            font-size: 30px;
+            font-family: arial;
         }
 
-        button, p {
-            margin: 0 8px;
+        button {
+            background-color: #fff;
+            border: 2px solid #000;
+            font-weight: bold;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:disabled {
+            opacity: .3;
         }
     </style>
     <!-- Plik ze stylami css -->
